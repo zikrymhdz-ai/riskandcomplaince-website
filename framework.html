@@ -93,7 +93,7 @@
             padding: 5rem 0;
             background: linear-gradient(135deg, var(--primary-color) 0%, #764ba2 100%);
             color: white;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             position: relative;
             overflow: hidden;
         }
@@ -109,13 +109,9 @@
             animation: float 20s ease-in-out infinite;
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
 
         .page-title {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
         }
@@ -127,7 +123,7 @@
 
         .content-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr;
             gap: 3rem;
             margin-bottom: 4rem;
         }
@@ -288,33 +284,6 @@
             font-weight: 500;
         }
 
-        .sidebar {
-            background: var(--bg-white);
-            border-radius: var(--border-radius);
-            padding: 2.5rem;
-            box-shadow: var(--shadow-md);
-            height: fit-content;
-            position: sticky;
-            top: 2rem;
-        }
-
-        .sidebar-title {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            color: var(--text-dark);
-            padding-bottom: 1rem;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        .sidebar-title-icon {
-            width: 24px;
-            height: 24px;
-            color: var(--primary-color);
-        }
 
         .resource-item {
             background: #f8fafc;
@@ -384,8 +353,6 @@
             .content-grid {
                 grid-template-columns: 1fr;
             }
-            .sidebar {
-                position: static;
             }
             .container {
                 padding: 0 1rem;
@@ -407,7 +374,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="exam-papers.html">Exam Papers</a></li>
+                <li><a href="exam-papers.html">Past Exam Papers</a></li>
                 <li><a href="frameworks.html" class="active">Key Frameworks</a></li>
             </ul>
         </div>
@@ -551,52 +518,6 @@
                 </a>
             </div>
 
-            <aside class="sidebar">
-                <h3 class="sidebar-title">
-                    <i class="fas fa-lightbulb sidebar-title-icon"></i>
-                    Quick Reference
-                </h3>
-
-                <div class="resource-item">
-                    <div class="resource-header">
-                        <div>
-                            <div class="resource-name">ISO 31000 Process</div>
-                            <div class="resource-type">Risk Context → Assess → Treat</div>
-                        </div>
-                        <i class="fas fa-certificate resource-icon"></i>
-                    </div>
-                </div>
-
-                <div class="resource-item">
-                    <div class="resource-header">
-                        <div>
-                            <div class="resource-name">COSO 5 Components</div>
-                            <div class="resource-type">Governance, Strategy, Performance</div>
-                        </div>
-                        <i class="fas fa-layer-group resource-icon"></i>
-                    </div>
-                </div>
-
-                <div class="resource-item">
-                    <div class="resource-header">
-                        <div>
-                            <div class="resource-name">NIST 5 Functions</div>
-                            <div class="resource-type">Identify, Protect, Detect, Respond, Recover</div>
-                        </div>
-                        <i class="fas fa-lock resource-icon"></i>
-                    </div>
-                </div>
-
-                <div class="resource-item">
-                    <div class="resource-header">
-                        <div>
-                            <div class="resource-name">3 Lines of Defense</div>
-                            <div class="resource-type">Operational, Risk Mgmt, Internal Audit</div>
-                        </div>
-                        <i class="fas fa-shield-alt resource-icon"></i>
-                    </div>
-                </div>
-            </aside>
         </div>
     </main>
 
@@ -607,3 +528,4 @@
     </footer>
 </body>
 </html>
+
